@@ -1,0 +1,464 @@
+body {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    box-shadow: 0px 0px 10px lightgray;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+
+.brocoContainer {
+    box-shadow: 0px 5px 10px lightgray;
+}
+
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+.logo:hover {
+    opacity: 0.5;
+}
+
+
+.scotlandFlag {
+    height: 30px;
+    width: 35px;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.mainPic {
+    max-width: 100%;
+    max-height: 300px;
+    display: flex;
+}
+
+
+.mainPic img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+.colorBro {
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 200px;
+}
+
+.colorBro img {
+    height: 55px;
+    padding: 5px;
+    background-color: rgb(253, 253, 253);
+    border-radius: 15px;
+}
+
+.colorBro img:hover {
+    zoom: 1.2;
+    cursor: pointer;
+}
+
+
+.restoInfosContainer {
+    box-shadow: 0px 3px 2px -1px lightgray;
+
+}
+
+.restoInfos {
+    margin: 0 auto;
+    margin-top: 5px;
+    max-width: 930px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.headlineResto {
+    padding-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headlineResto img {
+    width: 17px;
+    height: 17px;
+    background-color: rgba(211, 211, 211, 0.359);
+    padding: 10px;
+    border-radius: 45%;
+    cursor: pointer;
+}
+
+
+.ratings {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+
+.ratings img {
+    width: 20px;
+    object-fit: contain;
+    padding-right: 5px;
+}
+
+
+.ratings a {
+    padding-top: 5px;
+    color: rgb(121, 110, 110);
+
+}
+
+
+.bicycle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+
+.bicycle img {
+    width: 25px;
+}
+
+
+.bag {
+    display: flex;
+    gap: 5px;
+    height: 20px;
+}
+
+
+.searchBar {
+    text-decoration: none;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    position: sticky;
+    top: 800px;
+}
+
+.searchBar a {
+    color: rgb(121, 110, 110);
+    padding-top: 8px;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+
+.searchBar img {
+    height: 20px;
+    padding: 5px;
+}
+
+
+.searchBar button {
+    border: none;
+    border-radius: 45%;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+
+
+.menuList {
+    margin: 0 auto;
+    margin-top: 5px;
+    max-width: 930px;
+    display: flex;
+    flex-direction: column;
+}
+
+.headlineCategory {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 15px;
+
+}
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 96px;
+    border: solid 2px lightgray;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 10px 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu:hover {
+    background-color: rgb(237, 235, 235);
+}
+
+.menuName {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menuName img {
+    height: 17px;
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+
+.description {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+
+.price {
+    width: 100px;
+}
+
+
+.plusButton {
+    border: none;
+    border-radius: 100%;
+    font-size: 30px;
+    cursor: pointer;
+    height: 36px;
+    width: 36px;
+}
+
+
+.shoppingCart {
+    min-width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* neu und wichtig, funktioniert nur in Verbindung mit der Zeile drunter*/
+    position: sticky;
+    top: 0;
+}
+
+
+.shoppingCartHeadline {
+    padding: 20px 0px;
+}
+
+
+.shoppingBag img {
+    height: 70px;
+    width: 70px;
+}
+
+
+.foodOrder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+
+.priceList {
+    padding-top: 35px;
+}
+
+
+.prices {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+
+.amountButtons {
+    display: flex;
+    gap: 3px;
+}
+
+.amountButton {
+    font-size: 20px;
+    justify-content: center;
+    border: none;
+    border-radius: 100%;
+    background-color: lightgray;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+
+.payButton {
+    width: 250px;
+    margin-top: 30px;
+    padding: 5px 0px;
+    font-size: 20px;
+    color: black;
+    border-radius: 10px;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.show {
+    display: flex;
+    position: fixed;
+    background-color: aliceblue;
+    width: 100%;
+}
+
+.buttonMiniBasket {
+    display: none;
+}
+
+
+.x {
+    position: fixed;
+    top: 20px;
+    left: 50px;
+    height: 50px;
+    width: 50px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.d-none {
+    display: none !important;
+}
+
+@media (max-width: 1150px) {
+    .mainContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttonMiniBasket {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 106, 0, 0.985);
+        width: 250px;
+        height: 50px;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 10px;
+        position: sticky;
+        bottom: 10px;
+    }
+
+    .buttonMiniBasket:hover {
+        border-radius: 30px;
+    }
+
+    .shoppingCart {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 1050px) {
+    .header {
+        padding: 10px 10px;
+    }
+
+
+    .headlineResto {
+        margin: 5px 10px;
+    }
+
+
+    .searchBar a {
+        color: rgb(72, 71, 71);
+        padding-top: 8px;
+        margin-right: 10px;
+        text-decoration: none;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .headlineResto img {
+        display: none;
+    }
+
+
+    .mainContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .favs {
+        padding: 0px 15px;
+    }
+
+    .menuList {
+        margin: 5px 10px;
+    }
+
+}
+
+
+
+
+@media (max-width: 525px) {
+    .colorBro {
+        display: none;
+    }
+
+
+    .payButton {
+        width: 150px;
+    }
+
+
+    .headlineResto {
+        font-size: 11px;
+    }
+
+
+    .foodOrder {
+        width: 280px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0px 0px 10px lightgray;
+    }
+
+    .prices {
+        width: 280px;
+    }
+}

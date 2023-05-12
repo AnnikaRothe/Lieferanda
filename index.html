@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <title>Lieferanda</title>
+
+</head>
+
+<body onload="render(), renderBasket();">
+    <div class="header">
+        <div>
+            <img class="logo" src="img/logo_transparent.png" />
+        </div>
+        <div>
+            <h3 class="headline">Speisekarte</h3>
+        </div>
+        <div>
+            <img class="scotlandFlag" src="img/scotland.png" alt="Aye">
+            <img class="scotlandFlag" src="./img/burger.png" alt="Burger Menu">
+        </div>
+    </div>
+    <div class="mainContainer">
+        <div class="brocoContainer">
+            <div class="mainPic">
+                <div class="colorBro">
+                    <img src="./img/broPic2.png" alt="Bunter Broccoli">
+                </div>
+                <img src="img/broPic.jpg" />
+            </div>
+
+            <div>
+
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <div class="restoInfosContainer">
+                            <div class="restoInfos">
+                                <div>
+                                    <div class="headlineResto">
+                                        <h1> Brocco-Lee - The place to be!</h1>
+                                        <div>
+                                            <img src="./img/i.png" alt="Favoriten">
+                                            <img src="./img/heart.png" alt="Infos">
+                                        </div>
+                                    </div>
+                                    <div class="ratings">
+                                        <img src="img/star.jpg" />
+                                        <img src="img/star.jpg" />
+                                        <img src="img/star.jpg" />
+                                        <img src="img/star.jpg" />
+                                        <img src="img/star.jpg" />
+                                        <a href="#">666 Bewertungen</a>
+                                    </div>
+                                    <div class="bicycle">
+                                        <img src="./img/clock.png" />25-35 min |
+                                        <img src="img/bicycle.png" /> 3,00 € |
+                                        <div class="bag">
+                                            <img src="img/shoppingBag.png" />Min. 30,00 €
+                                        </div>
+                                    </div>
+                                    <p style="padding-left: 10px;">
+
+                                        Zeit für mehr Nachhaltigkeit! Ab sofort könnt ihr euer Lieblingsgericht in
+                                        umweltfreundlichen Mehrwegverpackungen bestellen.
+                                    </p>
+                                    <div class="searchBar">
+                                        <div style="display: flex;">
+                                            <button><img src="./img/lupe.png" alt="Suchen"></button>
+                                            <a href="#headline0">Beliebt</a>
+                                        </div>
+                                        <a href="#headline0">Vorspeisen</a>
+                                        <a href="#headline4">Combos</a>
+                                        <a href="#headline7">Dips</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                </div>
+                <div class="menuList" id="menuList"></div>
+            </div>
+        </div>
+        <div id="shoppingCart" class="shoppingCart"></div>
+        <button onclick="openMiniBasket()" class="buttonMiniBasket">Warenkorb</button>
+    </div>
+
+
+</body>
+
+</html>
