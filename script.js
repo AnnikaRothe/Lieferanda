@@ -237,8 +237,22 @@ function closeMiniBasket() {
   renderBasket();
 }
 
+// Registriert eine Funktion, die bei Größenänderungen des Browserfensters ausgeführt wird
 window.addEventListener("resize", function () {
+  // Überprüft, ob die Breite des Fensters kleiner als 1150px ist
   if (this.window.innerWidth < 1150) {
+    // Wenn die Bedingung erfüllt ist, fügt der HTML-Element-ID "shoppingCart" die Klasse "d-none" hinzu
+    // Dadurch wird das Element ausgeblendet
+    this.document.getElementById("shoppingCart").classList.add("d-none");
+  }
+});
+
+// Registriert eine Funktion, die bei Größenänderungen des Browserfensters ausgeführt wird
+window.addEventListener("resize", function () {
+  // Überprüft, ob die Breite des Fensters größer als 1150px ist
+  if (this.window.innerWidth > 1150) {
+    // Wenn die Bedingung erfüllt ist, wird beim HTML-Element-ID "shoppingCart" die Klasse "d-none" entfernt
+    // Dadurch wird das Element eingeblendet
     this.document.getElementById("shoppingCart").classList.remove("d-none");
   }
 });
